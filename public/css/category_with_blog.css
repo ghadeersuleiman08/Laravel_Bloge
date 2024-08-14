@@ -1,0 +1,63 @@
+.container {  
+  width: 80%;  
+  margin: 0 auto;  
+}  
+
+.row {  
+  display: flex;  
+}  
+
+.col-4 {  
+  flex: 1;  
+  padding: 10px;  
+}  
+
+.post {  
+  display: flex;  
+  align-items: flex-start;  
+}  
+
+.post-image {  
+  width: 130px; /* يمكنك تعديل حجم الصورة كما تريد */  
+  height: auto;  
+  margin-right: 15px;  
+}  
+
+.post-details {  
+  display: flex;  
+  flex-direction: column;  
+}  
+
+.post-title {  
+  margin: 0;  
+  font-size: 1.2em; /* يمكنك تعديل حجم الخط */  
+}  
+
+.post-meta {  
+  display: flex;  
+  align-items: center;  
+  margin-top: 5px;  
+}  
+
+.post-date {  
+  font-size: 0.9em; /* يمكنك تعديل حجم الخط */  
+  color: #777; /* يمكنك تعديل لون التاريخ */  
+  margin-right: 10px;  
+}  
+
+.author {  
+  display: flex;  
+  align-items: center;  
+}  
+
+.author-image {  
+  width: 30px; /* يمكنك تعديل حجم صورة الناشر */  
+  height: auto;  
+  border-radius: 50%; /* لجعلها دائرية */  
+  margin-left: 5px;  
+}  
+
+.author-name {  
+  font-size: 0.9em; /* يمكنك تعديل حجم الخط لاسم الناشر */  
+  color: #333; /* يمكنك تعديل لون الاسم */  
+}

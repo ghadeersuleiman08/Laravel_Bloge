@@ -1,0 +1,122 @@
+#searchResults {  
+  position: absolute; /* اجعل العنصر مكانيًا مطلقًا */  
+  z-index: 1000; /* تأكد من أن النتائج فوق العناصر الأخرى */  
+  background-color: white; /* لون الخلفية */  
+  border: 1px solid #ccc; /* حدود حول النتائج */  
+  width: calc(100% - 20px); /* تأكد من أن العرض يتناسب مع حقل الإدخال */  
+  max-height: 300px; /* الحد الأقصى للارتفاع */  
+  overflow-y: auto; /* إضافة تمرير عمودي إذا كانت النتائج كثيرة */  
+  display: none; /* إخفاء النتائج بشكل افتراضي */  
+}  
+
+#searchResults.show {  
+  display: block; /* عرض النتائج عند الحاجة */  
+  opacity: 1;  
+  transform: translateY(0);  
+  transition: opacity 0.3s ease, transform 0.3s ease;  
+}  
+
+/* التأثيرات المتبقية */  
+#searchResults {  
+  opacity: 0;  
+  transform: translateY(-10px);  
+}  
+
+
+.result {  
+  display: flex;  
+  align-items: center;  
+  margin-bottom: 10px;  
+}  
+
+.result-image {  
+  width: 50px; /* يمكنك تعديل الحجم */  
+  height: 50px; /* يمكنك تعديل الحجم */  
+  margin-right: 10px;  
+  border-radius: 5px; /* لجعل الصورة دائرية أو مستديرة */  
+}  
+
+.result-title {  
+  font-size: 1.2em; /* يمكنك تعديل حجم الخط */  
+  color: #333; /* يمكنك تعديل اللون */  
+}  
+
+/* ============================================================= */
+
+
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style:none;
+}
+
+
+
+
+
+.navbar {  
+  height: 70px;   
+  padding: 0;   
+}  
+
+.navbar-brand img {  
+  height: 200px;   
+  width: auto;   
+}  
+
+.navbar-fixed {  
+  position: fixed;   
+  top: 0;   
+  left: 0;   
+  right: 0;   
+  z-index: 1030;   
+}  
+
+.nav-link {  
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;    
+}  
+
+.nav-link.active {  
+  background-color: #00bfff;   
+  color: white;   
+  border-radius: 5px;   
+  padding: 5px 10px;   
+  transform: scale(0.95);  
+}  
+
+.nav-link:hover {  
+  background-color: #87CEFA;   
+}  
+
+body {  
+  padding-top: 70px;   
+}  
+
+/* استعلامات وسائط للمحافظة على استجابة التصميم */  
+@media (max-width: 768px) {  
+  .navbar {  
+    height: 50px; /* تقليل الارتفاع على الشاشات الصغيرة */  
+  }  
+
+  .navbar-brand img {  
+    height: 50px; /* تقليل ارتفاع اللوجو أيضًا */  
+  }  
+}  
+
+
+
+/* تأثير ضغط على الروابط */  
+.nav-link:active {  
+  transform: scale(0.95);  
+}  
+
+
+.author-image {  
+  width: 100px;  
+  height: 100px;  
+  border-radius: 50%;  
+}
